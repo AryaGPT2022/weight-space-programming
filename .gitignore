@@ -1,0 +1,17 @@
+# environments / OS
+.venv/
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+
+# large or regenerable artifacts (rebuild with the README "Reproduce" steps)
+checkpoints/
+data/
+logs/passes/
+*.safetensors
+*.pkl
+*.npy

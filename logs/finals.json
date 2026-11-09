@@ -1,0 +1,16 @@
+[
+"base",
+"bl_drop_top2",
+"bl_drop_alt2",
+"bl_mag_uniform33",
+"r0_compress",
+"r10_compress",
+"r10_compress_xs",
+"bl_drop_alt3",
+"bl_mag_uniform50",
+"c_posfix",
+"c_unlate",
+"c_revertlate",
+"r25_compress_revertlate",
+"r25_compress_xs_revertlate"
+]

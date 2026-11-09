@@ -1,0 +1,23 @@
+[project]
+name = "weight-space-programming"
+version = "0.1.0"
+description = "LLM-driven weight-space programming of a RAG cross-encoder reranker"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch>=2.4",
+  "transformers>=4.44",
+  "sentence-transformers>=3.0",
+  "safetensors",
+  "datasets>=2.20",
+  "bm25s[full]",
+  "PyStemmer",
+  "ir-measures",
+  "pytrec-eval-terrier",
+  "scikit-learn",
+  "numpy",
+  "pandas",
+  "matplotlib",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,4 @@
+r10_compress                 MSM nDCG 0.7212 AUC 0.7183 | BEIR nDCG 0.6681 AUC 0.8028 | F1 0.3902 | enc  7.25M tot 19.17M | cpu  233.4/s mps  678.0/s
+r10_compress_xs              MSM nDCG 0.7063 AUC 0.7009 | BEIR nDCG 0.6536 AUC 0.7957 | F1 0.3637 | enc  5.40M tot 17.32M | cpu  285.0/s mps  840.7/s
+bl_drop_alt3                 MSM nDCG 0.5630 AUC 0.5620 | BEIR nDCG 0.2158 AUC 0.5789 | F1 0.2563 | enc  5.47M tot 17.39M | cpu  346.8/s mps  980.6/s
+bl_mag_uniform50             MSM nDCG 0.6082 AUC 0.6103 | BEIR nDCG 0.3673 AUC 0.6598 | F1 0.2594 | enc  5.48M tot 17.40M | cpu  296.4/s mps  900.7/s

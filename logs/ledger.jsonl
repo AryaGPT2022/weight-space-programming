@@ -1,0 +1,32 @@
+{"kind": "test_eval", "name": "base", "model": "checkpoints/base", "time": "2026-11-09T20:33:35"}
+{"kind": "test_eval", "name": "bl_drop_top2", "model": "checkpoints/bl_drop_top2", "time": "2026-11-09T20:39:03"}
+{"kind": "test_eval", "name": "bl_drop_alt2", "model": "checkpoints/bl_drop_alt2", "time": "2026-11-09T20:40:52"}
+{"kind": "test_eval", "name": "bl_mag_uniform33", "model": "checkpoints/bl_mag_uniform33", "time": "2026-11-09T20:42:42"}
+{"kind": "test_eval", "name": "r0_compress", "model": "checkpoints/r0_compress", "time": "2026-11-09T20:50:00"}
+{"kind": "pass", "run": "main", "idx": 1, "model": "checkpoints/base", "n_pairs": 64, "want": ["attentions", "hidden"], "synthetic": false, "note": "P1/P3/P4/P5 checks on base; 16 cls pairs per dataset", "time": "2026-11-09T21:07:03", "secs": 1.0}
+{"kind": "pass", "run": "main", "idx": 2, "model": "checkpoints/base", "n_pairs": 256, "want": [], "synthetic": false, "note": "activation stats on base, seed 2", "time": "2026-11-09T21:07:23", "secs": 2.22}
+{"kind": "pass", "run": "main", "idx": 3, "model": "checkpoints/base", "n_pairs": 256, "want": [], "synthetic": false, "note": "activation stats on base, seed 3", "time": "2026-11-09T21:07:24", "secs": 1.43}
+{"kind": "pass", "run": "main", "idx": 4, "model": "checkpoints/base", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of base", "time": "2026-11-09T21:12:27", "secs": 0.75}
+{"kind": "pass", "run": "main", "idx": 5, "model": "checkpoints/r0_compress", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of r0_compress", "time": "2026-11-09T21:12:28", "secs": 0.43}
+{"kind": "pass", "run": "main", "idx": 6, "model": "checkpoints/r10_compress", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of r10_compress", "time": "2026-11-09T21:12:29", "secs": 0.53}
+{"kind": "pass", "run": "main", "idx": 7, "model": "checkpoints/r10_compress_xs", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of r10_compress_xs", "time": "2026-11-09T21:12:29", "secs": 0.37}
+{"kind": "pass", "run": "main", "idx": 8, "model": "checkpoints/base", "n_pairs": 130, "want": [], "synthetic": false, "note": "lead-bias test: positives shifted by prepended vs appended filler", "time": "2026-11-09T21:17:27", "secs": 0.61}
+{"kind": "pass", "run": "main", "idx": 9, "model": "checkpoints/base", "n_pairs": 48, "want": ["attentions", "hidden"], "synthetic": false, "note": "lead-bias mechanism: attentions orig vs pre160", "time": "2026-11-09T21:17:57", "secs": 0.25}
+{"kind": "pass", "run": "main", "idx": 10, "model": "checkpoints/base", "n_pairs": 48, "want": ["attentions", "hidden"], "synthetic": false, "note": "lead-bias mechanism: attentions orig vs pre160", "time": "2026-11-09T21:18:38", "secs": 0.24}
+{"kind": "pass", "run": "main", "idx": 11, "model": "checkpoints/base", "n_pairs": 8, "want": ["attentions", "hidden"], "synthetic": false, "note": "CLS positional prior: attentions orig/pre80/pre160/post160", "time": "2026-11-09T21:21:51", "secs": 0.21}
+{"kind": "pass", "run": "main", "idx": 12, "model": "checkpoints/c_posfix", "n_pairs": 130, "want": [], "synthetic": false, "note": "lead-bias test on c_posfix", "time": "2026-11-09T21:24:12", "secs": 0.41}
+{"kind": "pass", "run": "main", "idx": 13, "model": "checkpoints/c_posfix2", "n_pairs": 130, "want": [], "synthetic": false, "note": "lead-bias test on c_posfix2", "time": "2026-11-09T21:24:45", "secs": 0.4}
+{"kind": "pass", "run": "main", "idx": 14, "model": "checkpoints/c_unlate", "n_pairs": 130, "want": [], "synthetic": false, "note": "lead-bias test on c_unlate", "time": "2026-11-09T21:28:04", "secs": 0.4}
+{"kind": "pass", "run": "main", "idx": 15, "model": "checkpoints/c_revertlate", "n_pairs": 130, "want": [], "synthetic": false, "note": "lead-bias test on c_revertlate", "time": "2026-11-09T21:28:31", "secs": 0.4}
+{"kind": "pass", "run": "main", "idx": 16, "model": "checkpoints/c_revertlate", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of c_revertlate", "time": "2026-11-09T21:29:14", "secs": 0.67}
+{"kind": "pass", "run": "main", "idx": 17, "model": "checkpoints/r25_compress_revertlate", "n_pairs": 256, "want": [], "synthetic": false, "note": "slate eval of r25_compress_revertlate", "time": "2026-11-09T21:29:15", "secs": 0.44}
+{"kind": "test_eval", "name": "r10_compress", "model": "checkpoints/r10_compress", "time": "2026-11-09T21:30:52"}
+{"kind": "test_eval", "name": "r10_compress_xs", "model": "checkpoints/r10_compress_xs", "time": "2026-11-09T21:32:49"}
+{"kind": "test_eval", "name": "bl_drop_alt3", "model": "checkpoints/bl_drop_alt3", "time": "2026-11-09T21:35:07"}
+{"kind": "test_eval", "name": "bl_mag_uniform50", "model": "checkpoints/bl_mag_uniform50", "time": "2026-11-09T21:36:33"}
+{"kind": "test_eval", "name": "r25_compress_revertlate", "model": "checkpoints/r25_compress_revertlate", "time": "2026-11-09T21:47:31"}
+{"kind": "test_eval", "name": "base", "model": "checkpoints/base", "time": "2026-11-09T23:05:49"}
+{"kind": "test_eval", "name": "c_revertlate", "model": "checkpoints/c_revertlate", "time": "2026-11-09T23:08:23"}
+{"kind": "test_eval", "name": "c_unlate", "model": "checkpoints/c_unlate", "time": "2026-11-09T23:12:24"}
+{"kind": "test_eval", "name": "c_posfix", "model": "checkpoints/c_posfix", "time": "2026-11-09T23:15:11"}
+{"kind": "test_eval", "name": "r25_compress_revertlate", "model": "checkpoints/r25_compress_revertlate", "time": "2026-11-09T23:17:52"}
